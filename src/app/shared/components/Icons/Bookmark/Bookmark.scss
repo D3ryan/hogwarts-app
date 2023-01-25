@@ -1,0 +1,34 @@
+@use "../../../../../App.scss";
+
+%bookmark {
+  width: 22px;
+  height: 24px;
+}
+
+.bookmark_inactive {
+  @extend %bookmark;
+  fill: none;
+
+  path {
+    stroke: App.$light-text-color;
+  }
+}
+
+.bookmark_active {
+  @extend %bookmark;
+  fill: #333333;
+
+  path {
+    stroke: #333333;
+  }
+}
+
+.bookmark_nav {
+  width: 16px;
+  height: 17.37px;
+  fill: App.$primary-color;
+
+  path {
+    stroke: inherit;
+  }
+}
