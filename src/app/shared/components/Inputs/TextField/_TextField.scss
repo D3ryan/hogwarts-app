@@ -1,0 +1,27 @@
+.textfield-container {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+
+  .textfield {
+    height: 73px;
+    width: 310px;
+    padding-top: 37px;
+    font-family: inherit;
+    border-top-right-radius: 5.3px;
+    border-top-left-radius: 5.3px;
+    border: 0 solid #0000;
+    border-bottom: 2px solid #a4aaac;
+    background: #f2f3f3;
+
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+
+    &:focus {
+      outline: 0 solid #0000;
+    }
+  }
+}

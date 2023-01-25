@@ -1,0 +1,27 @@
+@use "../../Button/Button.scss";
+
+.file-input-container {
+ 
+  .label-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .file-input {
+    display: none;
+  }
+
+  label {
+    @extend %button-general-style;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 42.93px;
+    width: fit-content;
+    padding: 2.5px;
+  }
+
+  span{
+    margin-left: 5px;
+  }
+}
