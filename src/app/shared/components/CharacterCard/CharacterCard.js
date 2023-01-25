@@ -5,7 +5,7 @@ import CharacterPicture from "./CharacterPicture/CharacterPicture";
 
 export default function CharacterCard() {
   return (
-    <div className="card active">
+    <div className="card_active">
       <CharacterPicture/>
       <CharacterInformation/>
     </div>

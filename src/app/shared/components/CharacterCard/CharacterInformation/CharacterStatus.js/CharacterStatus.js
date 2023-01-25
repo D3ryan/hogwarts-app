@@ -1,5 +1,5 @@
 import React from "react";
-import BookmarkIcon from "../../../Icons/Bookmark";
+import BookmarkIcon from "../../../Icons/Bookmark/Bookmark";
 export default function CharacterStatus() {
   return (
     <div className="details-container">

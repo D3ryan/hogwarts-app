@@ -21,12 +21,12 @@
   }
 }
 
-.active {
+.card_active {
   @extend %card;
   background: App.$primary-color;
 }
 
-.inactive {
+.card_inactive {
     @extend %card;
     background: #CCCCCC;
 }
