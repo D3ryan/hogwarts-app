@@ -1,7 +1,6 @@
 import React from "react";
 import AddUserIcon from "../../Icons/AddUser/AddUser";
 import BookmarkIcon from "../../Icons/Bookmark/Bookmark";
-import './Nav.scss';
 
 export default function Nav() {
   return (
