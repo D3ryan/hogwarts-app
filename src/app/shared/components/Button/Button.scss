@@ -1,0 +1,27 @@
+@use "../../../../App.scss";
+
+.button {
+  height: 42.93px;
+  width: 140px;
+  border-radius: 2.56px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 4px solid #6b63b5;
+  color: App.$primary-color;
+  transition: background ease-in-out 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(107, 99, 181, 0.6);
+  }
+
+  &:active {
+    background: #6b63b5;
+    transition: background ease-in-out 0.2s;
+  }
+
+  @media screen and (min-width: App.$md) {
+    height: 67px;
+    width: 288px;
+    border-radius: 4px;
+  }
+}

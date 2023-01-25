@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <CharacterCard />
-      {/* <Button /> */}
+      <Button></Button>
     </>
   );
 }
