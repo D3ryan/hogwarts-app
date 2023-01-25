@@ -1,0 +1,51 @@
+@use "../../../../../App.scss";
+
+//Picture containter, related styles and
+//background gradient color for the profile picture
+%picture-container {
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  
+    @media screen and (min-width: App.$md) {
+      flex-direction: row;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      border-top-right-radius: 0;
+      flex: 1 0 210px;
+    }
+  
+    .picture {
+      width: 65px;
+      height: 65px;
+      margin: 10px;
+      border-radius: 100px;
+  
+      @media screen and (min-width: App.$md) {
+        height: 169.3px;
+        width: 169.3px;
+        margin: auto 0;
+      }
+    }
+  }
+  
+  .gryffindor {
+    @extend %picture-container;
+    background: linear-gradient(358.61deg, #ff0000 4.67%, #fed482 96.97%);
+  }
+  
+  .slytherin {
+    @extend %picture-container;
+    background: linear-gradient(135deg, #1c792b 0%, #82e95e 100%);
+  }
+  
+  .ravenclaw {
+    @extend %picture-container;
+    background: linear-gradient(135deg, #0597b7 0%, #66d1ff 100%);
+  }
+  
+  .hufflepuff {
+    @extend %picture-container;
+    background: linear-gradient(135deg, #ffc700 0%, #fff388 100%);
+  }

@@ -1,0 +1,22 @@
+@use "../../../../../../App.scss";
+
+.student-information-container {
+    display: none;
+    order: 3;
+    
+    p {
+      color: App.$secondary-text-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 27px;
+    }
+  
+    span {
+      font-weight: 400;
+    }
+  
+    @media screen and (min-width: App.$md) {
+      display: block;
+    }
+  }
+  

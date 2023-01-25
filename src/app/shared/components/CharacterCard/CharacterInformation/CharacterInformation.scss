@@ -1,0 +1,34 @@
+@use "../../../../../App.scss";
+
+//Information container styles
+.information-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+
+  //Student name styles
+  .student-name-text {
+    color: App.$primary-text-color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    order: 1;
+
+    @media screen and (min-width: App.$md) {
+      display: block;
+      text-align: start;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 46px;
+      order: 2;
+      margin: 20px 0;
+    }
+  }
+
+  @media screen and (min-width: App.$md) {
+    padding: 15px 20px;
+  }
+}

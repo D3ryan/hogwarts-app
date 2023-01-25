@@ -1,0 +1,35 @@
+@use "../../../../App.scss";
+@use "./CharacterPicture/CharacterPicture.scss";
+@use "./CharacterInformation/CharacterInformation.scss";
+@use "./CharacterInformation/CharacterStatus.js/CharacterStatus.scss";
+@use "./CharacterInformation/CharacterDetailedInformation/CharacterDetailedInformation.scss";
+
+//General Card Styles
+%card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 140px;
+  height: 181px;
+
+  @media screen and (min-width: App.$md) {
+    flex-direction: row;
+    height: 265px;
+    width: 515px;
+    border-radius: 16px;
+  }
+}
+
+.active {
+  @extend %card;
+  background: App.$primary-color;
+}
+
+.inactive {
+    @extend %card;
+    background: #CCCCCC;
+}
+
+
+

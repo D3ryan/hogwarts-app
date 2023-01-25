@@ -1,0 +1,35 @@
+@use "../../../../../../App.scss";
+//Student detailed Information Styles & bookmark icon
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  order: 2;
+
+  span,
+  .bookmark-icon {
+    color: App.$light-text-color;
+  }
+
+  span {
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+
+    span {
+      display: none;
+      @media screen and (min-width: App.$md) {
+        display: inline-block;
+        margin: 0 3px;
+      }
+    }
+
+    @media screen and (min-width: App.$md) {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: App.$md) {
+    order: 1;
+  }
+}
