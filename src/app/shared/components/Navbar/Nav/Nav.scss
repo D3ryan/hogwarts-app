@@ -1,0 +1,57 @@
+@use "../../../../../App.scss";
+.nav {
+    height: 36px;
+    width: 281px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: App.$primary-color;
+    background: App.$secondary-color;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  
+    div:nth-child(2) {
+      height: 100%;
+      border: 1px solid #403b6d;
+      width: 1px;
+    }
+  
+    div {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      span {
+        margin-right: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;
+      }
+  
+      svg {
+        vertical-align: text-bottom;
+      }
+  
+      @media screen and (min-width: App.$md) {
+        transform: rotate(180deg);
+      }
+    }
+  
+    @media screen and (min-width: App.$md) {
+      transform: rotate(180deg);
+  
+      div:first-child {
+        order: 3;
+      }
+  
+      div:nth-child(2){
+        order: 2;
+      }
+  
+      div:last-child {
+        order: 1;
+      }
+    }
+  }

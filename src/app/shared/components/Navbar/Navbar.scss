@@ -1,0 +1,11 @@
+@use "../../../../App.scss";
+
+.navbar {
+  width: 281px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: App.$md) {
+    flex-direction: column-reverse;
+  }
+}
