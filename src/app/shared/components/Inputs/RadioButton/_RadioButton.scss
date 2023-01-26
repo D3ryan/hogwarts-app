@@ -1,4 +1,8 @@
+@use "../../../../../App.scss";
+
 .radio-container {
+  margin: 15px;
+
   .radio {
     width: 16px;
     height: 16px;
@@ -7,12 +11,17 @@
     border-radius: 50%;
     box-shadow: 0 0 0 2px #979797;
     border: 3px solid #fff;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out 0.2s;
     margin-right: 14px;
 
     &:checked {
       background: #0e4da4;
       box-shadow: 0 0 0 2px #0e4da4;
     }
+  }
+
+  @media screen and (min-width: App.$md) {
+    margin: 15px 0;
+    flex-grow: 1;
   }
 }

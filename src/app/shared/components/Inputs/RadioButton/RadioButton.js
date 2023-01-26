@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function RadioButton(props) {
-  const { labelText = "Option" } = props;
+  const { label } = props;
   return (
     <div className="radio-container">
       <input id="radio" className="radio" type="radio" />
-      <label htmlFor="radio">{labelText}</label>
+      {label && <label htmlFor="radio">{label}</label>}
     </div>
   );
 }

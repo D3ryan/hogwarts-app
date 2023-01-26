@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function TextField(props) {
-  const { labelText = "TEXTFIELD" } = props;
+  const { label } = props;
   return (
     <div className="textfield-container">
-      <label htmlFor="textfield">{labelText}</label>
+      {label && <label htmlFor="textfield">{label}</label>}
       <input id="textfield" className="textfield" type={"text"} />
     </div>
   );

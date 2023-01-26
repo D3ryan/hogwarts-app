@@ -1,3 +1,77 @@
-@use '../Inputs/TextField/TextField';
-@use '../Inputs/RadioButton/RadioButton';
-@use '../Inputs/FileInput/FileInput';
+@use "../../../../App.scss";
+@use "../Inputs/TextField/TextField";
+@use "../Inputs/RadioButton/RadioButton";
+@use "../Inputs/FileInput/FileInput";
+
+body {
+  background-color: black !important;
+}
+
+.modal {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: App.$primary-color;
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 40px;
+
+      @media screen and (min-width: App.$md) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 40px;
+      }
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .save-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  @media screen and (min-width: App.$md) {
+    width: 727px;
+    height: 596px;
+    padding: 35px;
+  }
+}
+
+.textfields-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.radio-groups-container {
+  .radio-group-container {
+    .radio-group {
+      @media screen and (min-width: App.$md) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media screen and (min-width: App.$md) {
+      width: 310px;
+    }
+  }
+
+  @media screen and (min-width: App.$md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,27 +1,43 @@
+@use "../../../../../App.scss";
 @use "../../Button/Button.scss";
 
 .file-input-container {
- 
-  .label-container{
+  margin: 25px 0 10px 0;
+
+  .label-container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    label {
+      @extend %button-general-style;
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 40px;
+      width: fit-content;
+      padding: 2.5px;
+    }
+
+    span {
+      // margin-left: 5px;
+      margin: 10px 7px;
+    }
+
+    @media screen and (min-width: App.$md) {
+      flex-direction: row;
+      justify-content: start;
+      gap: 10px;
+    }
   }
 
   .file-input {
     display: none;
   }
 
-  label {
-    @extend %button-general-style;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 42.93px;
-    width: fit-content;
-    padding: 2.5px;
-  }
-
-  span{
-    margin-left: 5px;
+  @media screen and (min-width: App.$md) {
+    margin: 15px 0;
   }
 }
