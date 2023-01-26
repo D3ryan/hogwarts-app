@@ -8,9 +8,9 @@ import Modal from "./app/shared/components/Modal/Modal";
 function App() {
   return (
     <>
-      {/* <CharacterCard />
+      <CharacterCard />
       <Button/>
-      <Navbar/> */}
+      <Navbar/>
       <Modal/>
     </>
   );

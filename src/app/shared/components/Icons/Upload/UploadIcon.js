@@ -12,16 +12,16 @@ export default function UploadIcon() {
       <path
         d="M12.5 17L12.5 4M12.5 4L18 8.78947M12.5 4L7 8.78947"
         stroke="#FFF"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6 21H19"
         stroke="#FFF"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
