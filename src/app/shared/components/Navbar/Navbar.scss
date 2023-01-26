@@ -1,13 +1,20 @@
 @use "../../../../App.scss";
 @use "./Menu/Menu";
+@use "./Menu/MenuItem/MenuItem";
 @use "./Nav/Nav";
 
 .navbar {
-  width: 281px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: App.$md) {
+    right: 111px;
+    top: 0px;
+    bottom: unset;
     flex-direction: column-reverse;
+    width: 281px;
   }
 }

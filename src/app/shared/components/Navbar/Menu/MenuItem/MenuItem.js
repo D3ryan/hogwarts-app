@@ -1,7 +1,6 @@
 import React from "react";
 import TrashIcon from "../../../Icons/Trash/Trash";
 import profilePicture from "../../../../../../assets/prfile_pic.png"
-import './MenuItem.scss'
 
 export default function MenuItem() {
   return (
