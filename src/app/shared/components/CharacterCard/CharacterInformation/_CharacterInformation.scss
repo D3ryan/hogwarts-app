@@ -2,11 +2,14 @@
 
 //Information container styles
 .information-container {
-  width: 100%;
-  height: 100%;
+  flex-grow: 1;
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   //Student name styles
   .student-name-text {
@@ -17,18 +20,31 @@
     text-align: center;
     order: 1;
 
-    @media screen and (min-width: App.$md) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media screen and (min-width: App.$sm) {
+      font-size: 25px;
+    }
+
+    @media screen and (min-width: App.$lg) {
       display: block;
       text-align: start;
-      font-weight: 600;
       font-size: 30px;
-      line-height: 46px;
       order: 2;
-      margin: 20px 0;
+    }
+
+    @media screen and (min-width: App.$xl) {
+      font-size: 40px;
+      line-height: 86px;
     }
   }
 
-  @media screen and (min-width: App.$md) {
+  @media screen and (min-width: App.$sm) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: App.$lg) {
     padding: 15px 20px;
   }
 }

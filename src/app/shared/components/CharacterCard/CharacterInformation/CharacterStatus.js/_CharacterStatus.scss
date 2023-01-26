@@ -3,7 +3,7 @@
 .details-container {
   display: flex;
   justify-content: space-between;
-  order: 2;
+  order: 3;
 
   span,
   .bookmark-icon {
@@ -18,18 +18,18 @@
 
     span {
       display: none;
-      @media screen and (min-width: App.$md) {
+      @media screen and (min-width: App.$lg) {
         display: inline-block;
         margin: 0 3px;
       }
     }
 
-    @media screen and (min-width: App.$md) {
+    @media screen and (min-width: App.$lg) {
       display: inline-block;
     }
   }
 
-  @media screen and (min-width: App.$md) {
+  @media screen and (min-width: App.$lg) {
     order: 1;
   }
 }

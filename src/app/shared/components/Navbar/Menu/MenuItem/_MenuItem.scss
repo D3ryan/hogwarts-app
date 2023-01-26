@@ -11,6 +11,9 @@
     display: flex;
     align-items: center;
 
+    white-space: nowrap;
+    overflow: hidden;
+
     img {
       height: 34px;
       width: 34px;
@@ -22,11 +25,15 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 25px;
+      text-overflow: ellipsis;
+      overflow: hidden;
       color: App.$primary-color;
     }
   }
 
-
+  svg {
+    flex-shrink: 0;
+  }
 }
 
 .menu-item:first-child {

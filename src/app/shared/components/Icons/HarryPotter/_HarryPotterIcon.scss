@@ -1,0 +1,14 @@
+@use "../../../../../App.scss";
+
+.HarryPotterIcon {
+  display: none;
+  @media screen and (min-width: App.$md) {
+    display: inline-block;
+  }
+}
+
+.HarryPotterIconMobile {
+  @media screen and (min-width: App.$md) {
+    display: none;
+  }
+}

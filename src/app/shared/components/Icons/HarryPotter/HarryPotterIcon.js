@@ -3,6 +3,7 @@ import React from "react";
 export default function HarryPotterIconMobile() {
   return (
     <svg
+      className="HarryPotterIcon"
       width="194"
       height="66"
       viewBox="0 0 194 66"

@@ -3,6 +3,7 @@ import React from "react";
 export default function TrashIcon() {
   return (
     <svg
+      cursor="pointer"
       width="24"
       height="24"
       viewBox="0 0 24 24"

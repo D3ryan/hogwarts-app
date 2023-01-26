@@ -1,3 +1,7 @@
+@use "../../shared/components/Icons/HarryPotter/HarryPotterIcon";
+@use "../../shared/components/Icons/Bookmark/Bookmark";
+@use "../../../App.scss";
+
 main {
   background-image: url(../../../assets/harrypotterbackground.jpg);
   background-repeat: no-repeat;
@@ -5,5 +9,47 @@ main {
   min-height: 100vh;
   width: 100%;
 
-  
+  .main-title-container {
+    text-align: center;
+    padding-top: 100px;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      color: App.$primary-color;
+
+      @media screen and (min-width: App.$md) {
+        font-size: 35px;
+      }
+    }
+
+    @media screen and (min-width: App.$md) {
+      margin-bottom: 128px;
+    }
+  }
+
+  .main-buttons-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .main-cards-container {
+    margin-top: 46px;
+    padding-bottom: 120px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: center;
+
+    @media screen and (min-width: App.$sm) {
+      gap: 30px;
+    }
+
+    @media screen and (min-width: App.$lg) {
+      gap: 60px;
+    }
+
+  }
 }

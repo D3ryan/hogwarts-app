@@ -3,12 +3,13 @@
 %bookmark {
   width: 22px;
   height: 24px;
+  cursor: pointer;
 }
 
 .bookmark_inactive {
   @extend %bookmark;
   fill: none;
-
+  
   path {
     stroke: App.$light-text-color;
   }

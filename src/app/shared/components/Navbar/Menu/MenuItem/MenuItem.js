@@ -6,7 +6,7 @@ export default function MenuItem() {
   return (
     <div className="menu-item">
       <div>
-        <img src={profilePicture} alt="Student Image" />
+        <img src={profilePicture} alt="Student" />
         <span>Harry Potter</span>
       </div>
       <TrashIcon />

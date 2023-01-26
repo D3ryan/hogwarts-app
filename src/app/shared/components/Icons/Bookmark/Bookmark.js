@@ -1,5 +1,4 @@
 import React from "react";
-import './Bookmark.scss';
 
 export default function BookmarkIcon(props) {
   const { onClick, className = "bookmark_inactive" } = props;
