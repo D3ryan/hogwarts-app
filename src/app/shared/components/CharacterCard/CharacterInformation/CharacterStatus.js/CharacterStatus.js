@@ -1,13 +1,18 @@
 import React from "react";
 import BookmarkIcon from "../../../Icons/Bookmark/Bookmark";
-export default function CharacterStatus() {
+import { useSelector } from "react-redux";
+
+export default function CharacterStatus(props) {
+  const CharacterType = useSelector((state) => state.characters.CharacterType);
+  const { character } = props;
   return (
     <div className="details-container">
       <div className="sutdent-status-container">
         <span>
-          VIVO<span>/</span>
+          {character.alive ? "VIVO" : "FINADO"}
+          <span>/</span>
         </span>
-        <span>ESTUDIANTE</span>
+        <span>{CharacterType}</span>
       </div>
       <BookmarkIcon />
     </div>

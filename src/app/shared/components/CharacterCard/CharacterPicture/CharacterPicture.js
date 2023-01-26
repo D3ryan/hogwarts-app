@@ -1,10 +1,26 @@
 import React from "react";
-import profilePic from "../../../../../assets/prfile_pic.png";
 
-export default function CharacterPicture() {
+export default function CharacterPicture(props) {
+  const { character } = props;
+
+  const renderHouseColor = () => {
+    switch (character.house) {
+      case "Gryffindor":
+        return 'picture-container gryffindor';
+      case "Slytherin": 
+        return 'picture-container slytherin';
+      case "Ravenclaw":
+        return 'picture-container ravenclaw';
+      case "Hufflepuff":
+        return 'picture-container hufflepuff';
+      default:
+        return 'picture-container gryffindor';
+    }
+  };
+
   return (
-    <div className="picture-container gryffindor">
-      <img className="picture" src={profilePic} alt="Imagen del estudiante" />
+    <div className={renderHouseColor()}>
+      <img className="picture" src={character.image} alt="Student" />
     </div>
   );
 }

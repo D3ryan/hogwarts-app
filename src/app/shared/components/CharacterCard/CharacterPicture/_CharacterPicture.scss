@@ -25,6 +25,7 @@
     height: 65px;
     margin: 10px;
     border-radius: 100px;
+    object-fit: cover;
 
     @media screen and (min-width: App.$md) {
       width: 100px;
