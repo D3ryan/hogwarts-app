@@ -4,6 +4,7 @@ export default function BookmarkIcon(props) {
   const { onClick, className = "bookmark_inactive" } = props;
   return (
     <svg
+      data-testid="svg"
       onClick={onClick}
       className={className}
       viewBox= "0 0 22 24"

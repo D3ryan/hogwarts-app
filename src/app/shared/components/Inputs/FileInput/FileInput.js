@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import UploadIcon from "../../Icons/Upload/UploadIcon";
 
 export default function FileInput(props) {
-  const { id, name, onChange } = props;
+  const { id, name, onChange = () => {} } = props;
   const [fileName, setFileName] = useState("")
 
   const readFile = (file) => new Promise((resolve, reject) => {
@@ -24,7 +24,7 @@ export default function FileInput(props) {
 
   return (
     <div className="file-input-container">
-      <div className="label-container">
+      <div className="label-container" data-testid="label-container">
         <label htmlFor={id}>
           <UploadIcon />
           <span>SUBIR IMAGEN</span>
@@ -32,6 +32,7 @@ export default function FileInput(props) {
         <span className="filename">{fileName}</span>
       </div>
       <input
+        data-testid="file"
         accept="image/jpg,image/png,image/jpeg"
         type="file"
         id={id}

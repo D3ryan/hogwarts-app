@@ -4,6 +4,7 @@ export default function CancelIcon(props) {
   const { onClick } = props;
   return (
     <svg
+      data-testid="svg"
       onClick={onClick}
       cursor="pointer"
       width="34"

@@ -4,6 +4,7 @@ export default function TrashIcon(props) {
   const { onClick } = props;
   return (
     <svg
+      data-testid="svg"
       onClick={onClick}
       cursor="pointer"
       width="24"
