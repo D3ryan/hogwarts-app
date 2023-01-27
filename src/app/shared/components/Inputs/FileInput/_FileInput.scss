@@ -19,8 +19,22 @@
       height: 40px;
       width: fit-content;
       padding: 2.5px;
+      flex-shrink: 0;
     }
 
+    .filename{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 20px;
+      width: 100%;
+      text-align: center;
+      @media screen and (min-width: App.$md) {
+        width: unset;
+        text-align: start;
+      }
+    }
+    
     span {
       // margin-left: 5px;
       margin: 10px 7px;

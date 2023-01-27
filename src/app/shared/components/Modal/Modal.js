@@ -82,6 +82,12 @@ export default function Modal() {
     });
   };
 
+  const onFileInputChange = (base64Image) => {
+    setCharacter((old) => {
+      return {...old, image: base64Image}
+    })
+  }
+
   return (
     <section className="modal-section">
       <div className="overlay"></div>
@@ -157,7 +163,7 @@ export default function Modal() {
               </div>
             </div>
           </div>
-          <FileInput id="file" name="file" />
+          <FileInput id="file" name="file" onChange={onFileInputChange}/>
         </div>
         <div className="save-button-container">
           <Button onClick={onSaveClick}>GUARDAR</Button>

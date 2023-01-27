@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import UploadIcon from "../../Icons/Upload/UploadIcon";
 
 export default function FileInput(props) {
-  const { id, name } = props;
+  const { id, name, onChange } = props;
+  const [fileName, setFileName] = useState("")
+
+  const readFile = (file) => new Promise((resolve, reject) => {
+    if (file) {
+      setFileName(file.name);
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result)
+      reader.onerror = error => reject(error);
+    }
+
+
+    })
+    
+  const onFileChange = async (e) => {
+    const base64Image = await readFile(e.target.files[0]);
+    onChange(base64Image);
+  };
+
   return (
     <div className="file-input-container">
       <div className="label-container">
@@ -10,7 +29,7 @@ export default function FileInput(props) {
           <UploadIcon />
           <span>SUBIR IMAGEN</span>
         </label>
-        <span>archivo.jpg</span>
+        <span className="filename">{fileName}</span>
       </div>
       <input
         accept="image/jpg,image/png,image/jpeg"
@@ -18,6 +37,7 @@ export default function FileInput(props) {
         id={id}
         name={name}
         className="file-input"
+        onChange={onFileChange}
       />
     </div>
   );
