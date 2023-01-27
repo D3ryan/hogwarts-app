@@ -1,15 +1,25 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteFavorite } from "../../../../../../store/features/favorites/favoriteSlice";
 import TrashIcon from "../../../Icons/Trash/Trash";
-import profilePicture from "../../../../../../assets/prfile_pic.png"
 
-export default function MenuItem() {
+export default function MenuItem(props) {
+  const { favorite } = props;
+  const dispatch = useDispatch();
+  const favorites = useSelector((state) => state.favorites.data);
+
+  const onTrashIconClick = () => {
+    dispatch(deleteFavorite({ character: favorite, favorites: favorites }));
+  }
+
+
   return (
     <div className="menu-item">
       <div>
-        <img src={profilePicture} alt="Student" />
-        <span>Harry Potter</span>
+        <img src={favorite.image} alt="Student" />
+        <span>{favorite.name}</span>
       </div>
-      <TrashIcon />
+      <TrashIcon onClick={onTrashIconClick}/>
     </div>
   );
 }

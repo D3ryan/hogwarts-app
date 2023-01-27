@@ -10,7 +10,7 @@ export const getStudents = createAsyncThunk(
       const { data } = await StudentService.getStudents();
       return data;
     } catch (error) {
-      console.log(error)
+      // console.log(error)
       rejectWithValue(error.response.data);
     }
   }
@@ -76,8 +76,5 @@ export const characterSlice = createSlice({
     })
   },
 });
-
-// Action creators are generated for each case reducer function
-// export const { increment, decrement, incrementByAmount } = characterSlice.actions
 
 export default characterSlice.reducer;

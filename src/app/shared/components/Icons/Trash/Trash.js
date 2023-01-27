@@ -1,8 +1,10 @@
 import React from "react";
 
-export default function TrashIcon() {
+export default function TrashIcon(props) {
+  const { onClick } = props;
   return (
     <svg
+      onClick={onClick}
       cursor="pointer"
       width="24"
       height="24"
