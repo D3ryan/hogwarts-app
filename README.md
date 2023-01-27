@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Hogwarts-app
+## ¿Qué es lo que más te gustó de tu desarrollo?
+Lo que me gustó de este desarrollo fue la manera artesanal en la que creé los componentes, decidí no usar frameworks de css para retarme a diseñar desde 0 las vistas, dandole la exactitud a cada detalle según el diseño muestra proporcionado.
+
+## ¿Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
+Yo creo que hubiera añadido animaciones a los cambios de estado, definitivamente eso es lo que más me hubiese gustado mejorar.
+
+## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
+En si el desarrollo fue sencillo, pero uno de mis pain points fue buscar hosteo para la api, ya que Heroku gratuito era la mejor opción y ahora que ya no existe, batalle para encontrar un hosting gratuito que se adecuara a las necesidades de la api. 
+
+# Sobre el repositorio
+Existen 3 ramas en este repositorio las cuales son las siguientes:
+- `main`: la rama de producción
+- `develop`: la rama de desarrollo local
+- `pre-main`: la rama que sirve como testeo para antes de subir los cambios a la rama main
+
+Es importante realizar `npm install` al clonar.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
