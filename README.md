@@ -8,18 +8,29 @@ Yo creo que hubiera añadido animaciones a los cambios de estado, definitivament
 ## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
 En si el desarrollo fue sencillo, pero uno de mis pain points fue buscar hosteo para la api, ya que Heroku gratuito era la mejor opción y ahora que ya no existe, batalle para encontrar un hosting gratuito que se adecuara a las necesidades de la api. 
 
+# URL de la API hosteada en Glitch
+
+API: https://axiomatic-sunset-beluga.glitch.me/
+
+Repositorio: https://github.com/D3ryan/hogwarts-db
+
+Las peticiones GET, POST y DELETE que se hacen en la aplicación se reflejan en el json hosteado en Glitch.
+
 # Sobre el repositorio
 Existen 3 ramas en este repositorio las cuales son las siguientes:
 - `main`: la rama de producción
 - `develop`: la rama de desarrollo local
 - `pre-main`: la rama que sirve como testeo para antes de subir los cambios a la rama main
 
-Es importante realizar `npm install` al clonar.
+## Para levantar el proyecto
+1. Es importante realizar `npm install` al clonar.
+2. Ejecutar el comando `npm start`
 
-## Getting Started with Create React App
+## Pruebas Unitarias
+1. Si desea correr las pruebas unitarias en la consola haga `npm test` donde se desplegaran los resultados de cada uno de ellos
+2. Si desea ver las pruebas unitarias que se realizaron, puede ver cada carpeta que contenga componentes donde a su vez encontrará los archivos `.test.js`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# Comandos de la app
 ## Available Scripts
 
 In the project directory, you can run:
