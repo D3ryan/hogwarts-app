@@ -3,6 +3,7 @@ import { getFavorites, ToggleFavorites } from "../../../../../store/features/fav
 import AddUserIcon from "../../Icons/AddUser/AddUser";
 import { useDispatch, useSelector } from "react-redux";
 import BookmarkIcon from "../../Icons/Bookmark/Bookmark";
+import { ToggleModal } from "../../../../../store/features/modal/modalSlice";
 
 export default function Nav() {
 
@@ -19,7 +20,7 @@ export default function Nav() {
   };
 
   const onAddClick = () => {
-    alert("add")
+    dispatch(ToggleModal());
   }
 
   return (

@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function CancelIcon() {
+export default function CancelIcon(props) {
+  const { onClick } = props;
   return (
     <svg
+      onClick={onClick}
+      cursor="pointer"
       width="34"
       height="34"
       viewBox="0 0 34 34"

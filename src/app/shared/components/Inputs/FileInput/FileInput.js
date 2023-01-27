@@ -1,11 +1,12 @@
 import React from "react";
 import UploadIcon from "../../Icons/Upload/UploadIcon";
 
-export default function FileInput() {
+export default function FileInput(props) {
+  const { id, name } = props;
   return (
     <div className="file-input-container">
       <div className="label-container">
-        <label htmlFor="file">
+        <label htmlFor={id}>
           <UploadIcon />
           <span>SUBIR IMAGEN</span>
         </label>
@@ -14,7 +15,8 @@ export default function FileInput() {
       <input
         accept="image/jpg,image/png,image/jpeg"
         type="file"
-        id="file"
+        id={id}
+        name={name}
         className="file-input"
       />
     </div>

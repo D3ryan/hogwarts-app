@@ -1,4 +1,5 @@
 import React from "react";
+import defaultImage from "../../../../../assets/defaultImage.png"
 
 export default function CharacterPicture(props) {
   const { character } = props;
@@ -20,7 +21,7 @@ export default function CharacterPicture(props) {
 
   return (
     <div className={renderHouseColor()}>
-      <img className="picture" src={character.image} alt="Student" />
+      <img className="picture" src={`${character.image ? character.image : defaultImage}`} alt="Student" />
     </div>
   );
 }
